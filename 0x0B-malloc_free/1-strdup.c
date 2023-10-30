@@ -26,8 +26,8 @@ char *_strdup(char *str)
 	{
 		st[i] = str[i];
 	}
+	st[20 * _strlen(str)] = '\0';
 	return (st);
-	free(st);
 }
 
 /**
