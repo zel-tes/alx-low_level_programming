@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * _strdup - check the code for ALX School students.
@@ -10,40 +11,22 @@
 char *_strdup(char *str)
 {
 	char *st;
-	int i;
+	unsigned int i;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	st = malloc((2 * _strlen(str) + 1) * sizeof(char));
+	st = malloc(2 * strlen(str) * sizeof(char));
 
 	if (st == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i <= 2 * _strlen(str) ; i++)
+	for (i = 0; i <= 2 * strlen(str) ; i++)
 	{
 		st[i] = str[i];
 	}
-	st[20 * _strlen(str)] = '\0';
+	st[2 * strlen(str)] = '\0';
 	return (st);
-}
-
-/**
- * _strlen - calculate the length of string
- * @s: string
- *
- * Return: length
- **/
-int _strlen(char *s)
-{
-	int len = 0;
-
-	while (*s != '\0')
-	{
-		s++;
-		len = len + 1;
-	}
-	return (len);
 }
