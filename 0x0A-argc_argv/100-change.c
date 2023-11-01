@@ -11,11 +11,12 @@
 int main(int argc, char **argv)
 {
 	int x, m, n, p;
+	char *str = "Error";
 	int count = 0;
 
 	if (argc != 2)
 	{
-		fprintf(stderr, "Error\n");
+		printf("%s\n", str);
 		return (1);
 	}
 	x = atoi(argv[1]);
