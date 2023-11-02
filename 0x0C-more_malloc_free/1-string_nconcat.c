@@ -6,7 +6,7 @@
  * string_nconcat - adds strings
  * @s1: string 1
  * @s2: str 2
- * @n: no of chars 
+ * @n: no of chars
  *
  * Return: pointer
  **/
@@ -23,11 +23,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= a2)
 	{
 		s3 = malloc((a1 + a2 + 1) * sizeof(char));
-		if(s3 == NULL)
+		if (s3 == NULL)
 			return (NULL);
 		for (i = 0; i < a1; i++)
 			s3[i] = s1[i];
-		for(i = 0; i <= a2; i++)
+		for (i = 0; i <= a2; i++)
 		{
 			s3[a1 + i] = s2[i];
 			s3[a1 + a2] = '\0';
