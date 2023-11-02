@@ -20,7 +20,7 @@ int *array_range(int min, int max)
 	}
 	n = max - min + 1;
 	rnge = malloc(n * sizeof(int));
-	if(rnge == NULL)
+	if (rnge == NULL)
 	{
 		return (NULL);
 	}
@@ -33,6 +33,6 @@ int *array_range(int min, int max)
 			break;
 		}
 	}
-	return rnge;
+	return (rnge);
 	free(rnge);
 }
