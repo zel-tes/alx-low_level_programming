@@ -10,3 +10,4 @@ char *argstostr(int ac, char **av);
 int _putchar(char c);
 char **strtow(char *str);
 void print_tab(char **tab);
+char *reducespace(char *str);
