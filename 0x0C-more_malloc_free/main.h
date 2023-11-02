@@ -7,4 +7,3 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 int _putchar(char c);
 int multiply(int *num1, int *num2);
 void simple_print_buffer(int *buffer, unsigned int size);
-void simple_print_buffer(char *buffer, unsigned int size);
