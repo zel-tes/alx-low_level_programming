@@ -50,7 +50,7 @@ int main(int argc, char **argv __attribute__((unused)))
  * Return: pointer
  **/
 
-char *check_digit(const char *str)
+char *check_digit(char *str)
 {
 	int i;
 	int len = strlen(str);
@@ -62,7 +62,7 @@ char *check_digit(const char *str)
 			return (NULL);
 		}
 	}
-	return (strdup(str));
+	return (str);
 }
 
 /**
@@ -80,7 +80,6 @@ int multiply(const char *x, const char *y)
 
 	return (m * n);
 }
-
 /**
  * print - print the product
  * @num: product
