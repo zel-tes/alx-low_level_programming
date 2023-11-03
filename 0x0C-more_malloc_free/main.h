@@ -5,5 +5,7 @@ void *_calloc(unsigned int nmemb, unsigned int size);
 int *array_range(int min, int max);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 int _putchar(char c);
-int multiply(int *num1, int *num2);
 void simple_print_buffer(char *buffer, unsigned int size);
+char* check_digit(const char *str);
+int multiply(const char *x, const char *y);
+void print(int num);
