@@ -37,7 +37,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 			nstr[i] = str[i];
 		}
 	}
-	return (nstr);
 	free(ptr);
-	free(nptr);
+	return (nstr);
+
 }
