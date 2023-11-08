@@ -1,6 +1,8 @@
 #include <math.h>
 #include <stddef.h>
 #include "3-calc.h"
+#include <stdlib.h>
+#include <string.h>
 /**
  * get_op_func - Struct op
  * @s: The operator
@@ -19,8 +21,14 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (i <= 6)
-		if (ops->op == s)
-			return (ops->f);
+	while (i < 6)
+	{
+		if (strcmp(ops[i].op, s) == 0)
+		{
+			return (ops[i].f);
+		}
+		i++;
+	}
 	return (NULL);
+	exit(99);
 }
