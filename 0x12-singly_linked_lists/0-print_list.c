@@ -14,7 +14,6 @@ size_t print_list(const list_t *h)
 	int i;
 	const list_t *k;
 
-	k = (list_t *)malloc(sizeof(list_t));
 	k = h;
 	i = 0;
 
