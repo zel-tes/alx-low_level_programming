@@ -11,7 +11,7 @@
 void print_funct(void)
 {
 	list_t  *head, *tail;
-	char *s1 = "you\'re beat! and yet, you must allow,\n"
+	char *s1 = "You\'re beat! and yet, you must allow,\n"
 		"I bore my house upon my back!";
 
 	head = malloc(sizeof(list_t));
