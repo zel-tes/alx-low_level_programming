@@ -28,6 +28,8 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	{
 		n = n & (n - 1);
 		count_1++;
+		if (m == 0)
+			return count_1;
 		if (n == m)
 		{
 			count_1 = count_1 + 1;
