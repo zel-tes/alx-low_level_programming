@@ -30,5 +30,7 @@ size_t read_textfile(const char *filename, size_t letters)
 		length = strlen(fptr);
 		write(1, fptr, length);
 	}
+	free(fptr);
+	fclose(file);
 	return (letters);
 }
